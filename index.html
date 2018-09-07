@@ -5,9 +5,9 @@
     </head>
   
     <body>
-        <form>
+        <form oninput="distance_walked.value = gender + value.parseInt(height.value) + parseInt(age.value) + parseInt(laps.value) + parseInt(distance_per_lap">
             <fieldset>
-                <legend>Patient Parameters:</legend>
+                <legend>Input:</legend>
             Gender:<br>
             <input type="radio" name="gender" value="1">Male<br>
             <input type="radio" name="gender" value="0">Female<br>
@@ -23,7 +23,16 @@
 
             <input type="submit"><br><br>
             <input type="reset">
-            </fieldset>    
+            </fieldset>
+            
+             <fieldset>
+                <legend>Output:</legend>
+            Distance Walk:<br>
+            <output name="distance_walked" for="gender height age laps distance_per_lap"></output>
+                 
+            Percent Predicted:<br>
+            <output name="percent_predicted" for="gender height age laps distance_per_lap"></output>
+            </fieldset> 
         </form>
         
     </body>
