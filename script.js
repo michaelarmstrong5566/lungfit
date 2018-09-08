@@ -1,2 +1,2 @@
-alert("gender: " + gender);
-alert("height: " + height);
+alert("you are smart");
+
