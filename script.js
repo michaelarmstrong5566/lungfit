@@ -1,1 +1,1 @@
-
+alert("your smart");
