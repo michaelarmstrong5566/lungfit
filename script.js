@@ -1,6 +1,7 @@
-var a = document.getElementById("a");
+
 
 function myFunction() {
+    var a = document.getElementById("a");
     alert("You are: "+a+ " years old");
 }
 
