@@ -5,7 +5,7 @@ function myFunction() {
 
 function calculateDistanceWalked(){
     var x = document.getElementById("m").value;
-    console.log(x);
+    alert(x);
 
 } 
 
