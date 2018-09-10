@@ -1,8 +1,16 @@
 
-
 function myFunction() {
-    var a = document.getElementById("a");
-    alert("You are: "+a+ " years old");
+      alert("You are smart");
+}
+
+function calculateDistanceWalked(){
+    var x = document.getElementById("m").value;
+    console.log(x);
+
+} 
+
+function calculatePrecentPredicted(){
+
 }
 
 
