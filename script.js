@@ -9,6 +9,7 @@ function calculateDistanceWalked(){
     var h = document.getElementById("h").value;
 
     console.log("m: "+ m);
+    console.log("f: "+ f);
 
 } 
 
