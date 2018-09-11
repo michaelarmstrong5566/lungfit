@@ -12,7 +12,7 @@ function putFormElementsInArray(){
 
 
 function calculateDistanceWalked(){
-  var x = document.getElementsByName("Gender").value;
+  var x = document.getElementById("6mwd_form");
   
   alert("You are about to calculate the distance walked: Gender= " + x);
  
