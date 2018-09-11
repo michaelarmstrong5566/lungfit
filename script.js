@@ -1,7 +1,7 @@
 function putFormElementsInArray(){
 	var x = document.getElementById("6mwd_form");
 	var i;
-	var 6mwd_array = [gender, height, age, laps, distance_per_lap];
+	var 6mwd_array = ["gender", "height", "age", "laps", "distance_per_lap"];
 
 	for(i=0; i<x.length; i++){
 
