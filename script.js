@@ -6,7 +6,7 @@ function putFormElementsInArray(){
 	for(i=0; i<x.length(); i++){
 
 	}
-	console.log("The number of form elements= " x.length());
+	console.log("The number of form elements= " + x.length());
 
 }
 
