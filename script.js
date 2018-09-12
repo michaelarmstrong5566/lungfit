@@ -1,5 +1,6 @@
 function calculateDistanceWalked(){
-  alert(document.getElementById("g")); 
+  var g = document.getElementById("g");
+  alert(g); 
   
 
 } 
