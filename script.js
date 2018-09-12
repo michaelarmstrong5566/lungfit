@@ -1,6 +1,6 @@
 function calculateDistanceWalked(){
   var gender = document.getElementById("g");
-  alert(gender); 
+  alert(gender.value); 
   
 
 } 
