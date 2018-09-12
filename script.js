@@ -1,10 +1,6 @@
-function putFormElementsInArray(){
-
-}
-
 function calculateDistanceWalked(){
-   
-  alert("You are about to calculate the distance walked:");
+  let g = document.getElementById("g"); 
+  alert("You are about to calculate the distance walked: "+g);
 
 } 
 
