@@ -18,7 +18,7 @@ function calculatePrecentPredicted(){
 
 }
 
-alert(calculateDistanceWalked());
+//alert(calculateDistanceWalked());
 
 
 
