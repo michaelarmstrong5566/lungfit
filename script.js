@@ -18,4 +18,8 @@ function calculatePrecentPredicted(){
 
 }
 
+alert(calculateDistanceWalked());
+
+
+
 
