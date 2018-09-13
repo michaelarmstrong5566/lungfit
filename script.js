@@ -8,7 +8,7 @@ function calculatePredictedWalkDistance(){
   
   var predicted_distance = 218+(5.14*parseInt(height.value)-5.32*parseInt(age.value))-1.8*parseInt(height.value)+51.31*parseInt(gender.value);
   
-  document.getElementById("predicted_distance").innerHTML = "Predicted Distance: " + predicted_distance;
+  document.getElementById("predicted_walk_distance").innerHTML = "Predicted Distance: " + predicted_distance;
   
   //alert("gender_select + gender: " + (parseInt(gender_select.value) + parseInt(gender.value)));
    
