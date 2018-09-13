@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <form id="6mwd_form" onsubmit="calculateDistanceWalked()">
+    <form id="6mwd_form" onsubmit="calculateDistanceWalked()" oninput="d.value=parseInt(g.value)+parseInt(h.value)+parseInt(a.value)+parseInt(l.value)+parseInt(dpl.value)+">
         <fieldset>
             <legend>Input:</legend>
 
@@ -26,7 +26,8 @@
 
         <fieldset>
             <legend>Output:</legend>
-            Distance Walked:<br>
+            Distance Walked:<br><br>
+            <output form="6mwd_form" name="d" for="height age laps distance_per_lap"></output>
 
 
             Percent Predicted:<br>
