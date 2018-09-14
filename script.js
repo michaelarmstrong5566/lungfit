@@ -29,7 +29,7 @@ function calculateDistanceWalked(){
 
 function calculatePercentPredicted(){
   //output percent predicted
-  document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ calculateDistanceWalked()/calculatePredictedWalkDistance()*100 +"%";
+  document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ parseInt(calculateDistanceWalked()/calculatePredictedWalkDistance()*100) +"%";
 
 }
 
