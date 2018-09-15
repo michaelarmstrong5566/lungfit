@@ -2,10 +2,17 @@
 <html>
 <head>
     <title>6MWD Calculator</title>
+     
+	<!-- My Custom Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+   
 </head>
 
 <body>
+   
     <form id="6mwd_form" oninput="calculatePredictedWalkDistance(); calculateDistanceWalked();calculatePercentPredicted() ">
+        <div class="row">
+            <div class="column">
         <fieldset>
             <legend>Input:</legend>
 
@@ -20,9 +27,9 @@
             
            
         </fieldset>
+            </div>
 
-
-
+        <div class="column">
         <fieldset>
             <legend>Output:</legend>
             <p id="predicted_walk_distance"></p>
@@ -34,7 +41,10 @@
 
 
 
-        </fieldset> 
+        </fieldset>
+            </div>
+            </div>
+            
     </form>
 
 
