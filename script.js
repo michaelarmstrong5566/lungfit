@@ -19,7 +19,7 @@ function calculateDistanceWalked(){
   var distance_per_lap = document.getElementById("dpl");
   
   //calculate distance walked
-  var distance_walked = parseInt(l.value)*parseInt(dpl.value);
+  var distance_walked = parseFloat(l.value)*parseFloat(dpl.value);
   
   //output the distance walked
   document.getElementById("distance_walked").innerHTML = "Distance Walked: " + parseInt(distance_walked) +"m";
