@@ -1,3 +1,10 @@
+
+allFuncts : function() {
+    calculatePredictedWalkDistance();
+    calculateDistanceWalked();
+    calculatePercentPredicted();
+}
+
 function calculatePredictedWalkDistance(){
 
   //get gender, height, age, laps, distance/lap
@@ -32,7 +39,6 @@ function calculatePercentPredicted(){
   document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ parseInt(calculateDistanceWalked()/calculatePredictedWalkDistance()*100) +"%";
 
 }
-
 
 
 // CodePen Stopwatch by Billy Brown (https://codepen.io/_Billy_Brown/pen/dbJeh)
