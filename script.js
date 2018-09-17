@@ -1,9 +1,9 @@
 
-allFuncts : function() {
+/*allFuncts : function() {
     calculatePredictedWalkDistance();
     calculateDistanceWalked();
     calculatePercentPredicted();
-}
+}*/
 
 function calculatePredictedWalkDistance(){
 
