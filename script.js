@@ -10,7 +10,7 @@ alert("testing testing 1 2 3");
   var gender2 = document.getElementById("g2");
   var height2 = document.getElementById("h2");
   var age2 = document.getElementById("a2");
-    alert("gender2: "+g2+"height2: "+h2+"age2: "+a2);
+    alert("gender2: "+gender2 +"height2: "+height2+"age2: "+age2);
     
 }
 
