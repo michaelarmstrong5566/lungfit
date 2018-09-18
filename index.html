@@ -71,6 +71,30 @@
         </fieldset>
             </div>
             </div>
+	    
+	    <div class="row">
+            <div class="column">
+		     <fieldset>
+            <legend>Input:</legend>
+		    
+		    <p>This example uses the HTML DOM to assign an "onkeyup" event to an input element.</p>
+
+<p>Press a key inside the text field and release it to set the text to uppercase.</p>
+
+Enter your name: <input type="text" id="fname">
+
+<script>
+document.getElementById("fname").onkeyup = function() {myFunction()};
+
+function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}
+</script>
+		  </fieldset>	     
+	    </div>
+            </div>   
+	    
             
     </form>
 
