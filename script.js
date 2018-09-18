@@ -6,7 +6,7 @@ function allFunctions() {
 }
 
 function testing(){
-alert("testing testing 1 2 3");
+    //alert("testing testing 1 2 3");
   var gender2 = document.getElementById("g2");
   var height2 = document.getElementById("h2");
   var age2 = document.getElementById("a2");
