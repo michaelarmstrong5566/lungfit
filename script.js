@@ -12,10 +12,34 @@ function testing(){
     //var age2 = document.getElementById("a2");
     //alert("gender2: "+gender2.value +" height2: "+parseInt(height2.value)+" age2: "+age2.value);
     document.getElementById("g2").style.backgroundColor = "red";
-    document.getElementById("h2").style.backgroundColor = "orange";
-    document.getElementById("a2").style.backgroundColor = "yellow";
-    document.getElementById("l2").style.backgroundColor = "blue";
-    document.getElementById("dpl2").style.backgroundColor = "purple";
+    //document.getElementById("h2").style.backgroundColor = "orange";
+    //document.getElementById("a2").style.backgroundColor = "yellow";
+    //document.getElementById("l2").style.backgroundColor = "blue";
+    //document.getElementById("dpl2").style.backgroundColor = "purple";
+    
+     //get gender, height, age, laps, distance/lap
+     var gender = document.getElementById("g2");
+     var height = document.getElementById("h2");
+     var age = document.getElementById("a2");
+    
+    //calculate predicted distance
+    var predicted_distance = 218+(5.14*parseInt(height.value)-5.32*parseInt(age.value))-1.8*parseInt(height.value)+51.31*parseInt(gender.value);
+ 
+    //output the calcualted predicted walk distance
+    document.getElementById("predicted_walk_distance2").innerHTML = "Predicted Walk Distance: " + parseInt(predicted_distance) +"m";
+
+    //get laps, distance/lap
+    var laps = document.getElementById("l");
+    var distance_per_lap = document.getElementById("dpl");
+    
+    //calculate distance walked
+    var distance_walked = parseFloat(l.value)*parseFloat(dpl.value);
+    
+    //output the distance walked
+    document.getElementById("distance_walked2").innerHTML = "Distance Walked: " + parseInt(distance_walked) +"m";
+    
+    //output percent predicted
+    document.getElementById("percent_predicted2").innerHTML = "Percent predicted: "+ parseInt(distance_walked/predicted_distance*100) +"%";
 }
 
 function calculatePredictedWalkDistance(){
@@ -52,6 +76,8 @@ function calculatePercentPredicted(){
   document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ parseInt(calculateDistanceWalked()/calculatePredictedWalkDistance()*100) +"%";
 
 }
+
+
 
 
 // CodePen Stopwatch by Billy Brown (https://codepen.io/_Billy_Brown/pen/dbJeh)
