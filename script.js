@@ -5,6 +5,10 @@ function allFunctions() {
     calculatePercentPredicted();
 }
 
+function testing(){
+alert("testing testing 1 2 3");
+}
+
 function calculatePredictedWalkDistance(){
 
   //get gender, height, age, laps, distance/lap
