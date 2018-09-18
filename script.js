@@ -7,11 +7,15 @@ function allFunctions() {
 
 function testing(){
     //alert("testing testing 1 2 3");
-  var gender2 = document.getElementById("g2");
-  var height2 = document.getElementById("h2");
-  var age2 = document.getElementById("a2");
-    alert("gender2: "+gender2.value +" height2: "+parseInt(height2.value)+" age2: "+age2.value);
-    
+    //var gender2 = document.getElementById("g2");
+    //var height2 = document.getElementById("h2");
+    //var age2 = document.getElementById("a2");
+    //alert("gender2: "+gender2.value +" height2: "+parseInt(height2.value)+" age2: "+age2.value);
+    document.getElementById("g2").style.backgroundColor = "red";
+    document.getElementById("h2").style.backgroundColor = "orange";
+    document.getElementById("a2").style.backgroundColor = "yellow";
+    document.getElementById("l2").style.backgroundColor = "blue";
+    document.getElementById("dpl2").style.backgroundColor = "purple";
 }
 
 function calculatePredictedWalkDistance(){
