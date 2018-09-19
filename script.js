@@ -19,18 +19,10 @@ function testing(){
     
      //get gender, height, age, laps, distance/lap
      var gender = document.getElementById("g2");
-     var height = document.getElementById("h2");
-     var age = document.getElementById("a2");
-     var laps = document.getElementById("l2");
-     var distance_per_lap = document.getElementById("dpl2");
-    
-     //calculate predicted distance
-    console.log("height: "+ parseInt(height.value));
-    console.log("age: "+parseInt(age.value));
-    console.log("gender: "+parseInt(gender.value));
-    console.log("laps: "+parseInt(laps.value));
-    console.log("distance/lap: "+parseInt(distance_per_lap.value));
-    
+        
+     //console.log variables
+    console.log("gender: "+ gender);
+        
     /*
     
      var predicted_distance = 218+
