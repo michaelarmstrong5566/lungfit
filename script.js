@@ -21,24 +21,22 @@ function testing(){
      var gender = document.getElementById("g2");
      var height = document.getElementById("h2");
      var age = document.getElementById("a2");
+     var laps = document.getElementById("l2");
+     var distance_per_lap = document.getElementById("dpl2");
     
-    //calculate predicted distance
-    var predicted_distance = 218+(5.14*parseInt(height.value)-5.32*parseInt(age.value))-1.8*parseInt(height.value)+51.31*parseInt(gender.value);
+     //calculate predicted distance
+     var predicted_distance = 218+(5.14*parseInt(height.value)-5.32*parseInt(age.value))-1.8*parseInt(height.value)+51.31*parseInt(gender.value);
  
+     //calculate distance walked
+     var distance_walked = parseFloat(l2.value)*parseFloat(dpl2.value);
+    
     //output the calcualted predicted walk distance
     document.getElementById("predicted_walk_distance2").innerHTML = "Predicted Walk Distance: " + parseInt(predicted_distance) +"m";
 
-    //get laps, distance/lap
-    var laps = document.getElementById("l");
-    var distance_per_lap = document.getElementById("dpl");
-    
-    //calculate distance walked
-    var distance_walked = parseFloat(l.value)*parseFloat(dpl.value);
-    
     //output the distance walked
     document.getElementById("distance_walked2").innerHTML = "Distance Walked: " + parseInt(distance_walked) +"m";
     
-    //output percent predicted
+    //calculate and output percent predicted
     document.getElementById("percent_predicted2").innerHTML = "Percent predicted: "+ parseInt(distance_walked/predicted_distance*100) +"%";
 }
 
