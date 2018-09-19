@@ -10,8 +10,8 @@ function testing(){
     //var gender2 = document.getElementById("g2");
     //var height2 = document.getElementById("h2");
     //var age2 = document.getElementById("a2");
-    //alert("gender2: "+gender2.value +" height2: "+parseInt(height2.value)+" age2: "+age2.value);
-    document.getElementById("g2").style.backgroundColor = "red";
+    //alert("gender: "+gender.value +" height: "+parseInt(height.value)+" age: "+age.value);
+    //document.getElementById("g2").style.backgroundColor = "red";
     //document.getElementById("h2").style.backgroundColor = "orange";
     //document.getElementById("a2").style.backgroundColor = "yellow";
     //document.getElementById("l2").style.backgroundColor = "blue";
@@ -25,6 +25,8 @@ function testing(){
      var distance_per_lap = document.getElementById("dpl2");
     
      //calculate predicted distance
+    console.log("gender: "+ gender);
+    
      var predicted_distance = 218+(5.14*parseInt(height.value)-5.32*parseInt(age.value))-1.8*parseInt(height.value)+51.31*parseInt(gender.value);
  
      //calculate distance walked
