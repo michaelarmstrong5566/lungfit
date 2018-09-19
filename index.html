@@ -18,15 +18,15 @@
         <fieldset>
             <legend>Input:</legend>
 
-            <select type="number" id="g">
+            <select type="number" id="g2" onkeyup="testing()">
                 <option value="1">Male</option>
                 <option value="0">Female</option>
             </select><br><br>
-            <input type="number" id="h" name="height" placeholder="Height (cm)"><br><br>
-            <input type="number" id="a" name="age" placeholder="Age(years)" ><br><br>
-            <input type="number" id="l" name="laps" placeholder="Laps(#)"><br><br>
+            <input type="number" id="h2" name="height" placeholder="Height (cm)" onkeyup="testing()"><br><br>
+            <input type="number" id="a2" name="age" placeholder="Age(years)" onkeyup="testing()"><br><br>
+            <input type="number" id="l2" name="laps" placeholder="Laps(#)"onkeyup="testing()"><br><br>
             
-		<select type="number" id="dpl" name="distance_per_lap">
+		<select type="number" id="dpl2" name="distance_per_lap" onkeyup="testing()">
 			<option value="25">25m</option>
 			<option value="50" selected>50m</option>
                 	<option value="75">75m</option>
@@ -59,60 +59,6 @@
         <div class="column">
         <fieldset>
             <legend>Output:</legend>
-            <p id="predicted_walk_distance"></p>
-            <p id="distance_walked"></p>
-            <p id="percent_predicted"></p>
-
-
-            
-
-
-
-        </fieldset>
-            </div>
-            </div>
-	    
-	    <div class="row">
-            <div class="column">
-		     <fieldset>
-            <legend>Input2:</legend>
-			     
-			       <select type="number" id="g2" onkeyup="testing()">
-                <option value="1">Male</option>
-                <option value="0">Female</option>
-            </select><br><br>
-            <input type="number" id="h2" name="height" placeholder="Height (cm)" onkeyup="testing()"><br><br>
-            <input type="number" id="a2" name="age" placeholder="Age(years)" onkeyup="testing()"><br><br>
-            <input type="number" id="l2" name="laps" placeholder="Laps(#)"onkeyup="testing()"><br><br>
-            
-		<select type="number" id="dpl2" name="distance_per_lap" onkeyup="testing()">
-			<option value="25">25m</option>
-			<option value="50" selected>50m</option>
-                	<option value="75">75m</option>
-			<option value="100">100m</option>
-			
-		</select>
-			     
-			     
-		    
-		    <p>This example uses the HTML DOM to assign an "onkeyup" event to an input element.</p>
-
-<p>Press a key inside the text field and release it to set the text to uppercase.</p>
-
-Enter your name: <input type="text" id="fname">
-
-<script>
-document.getElementById("fname").onkeyup = function() {myFunction()};
-
-function myFunction() {
-    var x = document.getElementById("fname");
-    x.value = x.value.toUpperCase();
-}
-</script>
-		  </fieldset>
-		    <div class="column">
-        <fieldset>
-            <legend>Output2:</legend>
             <p id="predicted_walk_distance2"></p>
             <p id="distance_walked2"></p>
             <p id="percent_predicted2"></p>
@@ -124,10 +70,9 @@ function myFunction() {
 
         </fieldset>
             </div>
-		    
-	    </div>
-            </div>   
-	    
+            </div>
+	
+	
             
     </form>
 
