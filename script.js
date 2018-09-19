@@ -27,7 +27,17 @@ function testing(){
         
     var form = document.getElementById('form');
 
+    var text = form[0];
+    console.log(text.value);
     var text = form[1];
+    console.log(text.value);
+    var text = form[2];
+    console.log(text.value);
+    var text = form[3];
+    console.log(text.value);
+    var text = form[4];
+    console.log(text.value);
+    var text = form[5];
     console.log(text.value);
 }
     /*
