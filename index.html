@@ -12,7 +12,7 @@
 
 <body>
    
-    <form id="6mwd_form" onsubmit="testing()">
+    <form id="6mwd_form">
         <div class="row">
             <div class="column">
         <fieldset>
@@ -26,15 +26,14 @@
             <input type="number" id="a2" name="age" placeholder="Age(years)"><br><br>
             <input type="number" id="l2" name="laps" placeholder="Laps(#)"><br><br>
             
-		<select type="number" id="dpl2" name="distance_per_lap" >
+		<select type="number" id="dpl2" name="distance_per_lap" onkeypress= "testing()">
 			<option value="25">25m</option>
 			<option value="50" selected>50m</option>
                 	<option value="75">75m</option>
 			<option value="100">100m</option>
 			
 		</select>
-		<input type="submit" value="Submit">
-		<input type="button" onclick="myFunction()" value="Reset form">
+		
             
            
         </fieldset>
@@ -77,11 +76,7 @@
 	
             
     </form>
-<script>
-function myFunction() {
-    document.getElementById("6mwd_form").reset();
-}
-</script>
+
 	
 
     <script type="text/javascript" src="script.js">
