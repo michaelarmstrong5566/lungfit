@@ -36,7 +36,7 @@ function testing(){
                               +51.31*parseInt(gender.value);
  
      //calculate distance walked
-     var distance_walked = parseFloat(l2.value)*parseFloat(dpl2.value);
+     var distance_walked = parseFloat(laps.value)*parseFloat(distance_per_lap.value);
     
     //output the calcualted predicted walk distance
     document.getElementById("predicted_walk_distance2").innerHTML = "Predicted Walk Distance: " + parseInt(predicted_distance) +"m";
