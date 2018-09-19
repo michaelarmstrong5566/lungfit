@@ -28,7 +28,7 @@ function testing(){
     var form = document.getElementById('form');
 
     var text = form[0];
-    console.log(text.value);
+    console.log(text);
     var text = form[1];
     console.log(text.value);
     var text = form[2];
