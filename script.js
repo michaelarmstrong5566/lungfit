@@ -42,20 +42,20 @@ function testing(){
     
     var distance_per_lap = form[5];
     console.log(distance_per_lap.value);
-}
+
         
     //calculate predicted distance
-     var predicted_distance = 218+(5.14*parseFloat(height.value));
+     var predicted_distance = 218+(5.14*height.value);
      //                         -5.32*parseInt(age.value))
      //                         -1.8*parseInt(height.value)
      //                         +51.31*parseInt(gender.value);
 
     
-    console.log(parseFlot(predicted_distance));
+    console.log(predicted_distance);
     
     //output the calcualted predicted walk distance
     document.getElementById("predicted_walk_distance2").innerHTML = "Predicted Walk Distance: " + predicted_distance +"m";
-    
+}    
     /*
  
      //calculate distance walked
