@@ -25,9 +25,15 @@ function testing(){
      var distance_per_lap = document.getElementById("dpl2");
     
      //calculate predicted distance
-    console.log("gender: "+ gender.value);
+    console.log("height: "+ parseInt(height.value));
+    console.log("age: "+parseInt(age.value));
+    console.log("gender: "+parseInt(gender.value));
     
-     var predicted_distance = 218+(5.14*parseInt(height.value)-5.32*parseInt(age.value))-1.8*parseInt(height.value)+51.31*parseInt(gender.value);
+     var predicted_distance = 218+
+                              (5.14*parseInt(height.value)
+                              -5.32*parseInt(age.value))
+                              -1.8*parseInt(height.value)
+                              +51.31*parseInt(gender.value);
  
      //calculate distance walked
      var distance_walked = parseFloat(l2.value)*parseFloat(dpl2.value);
