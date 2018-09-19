@@ -22,8 +22,13 @@ function testing(){
         
      //console.log variables
     console.log("gender: "+ gender);
-    }
+            }
         
+    var form = document.getElementById('form');
+
+    var text = form[0];
+    console.log(text.value);
+
     /*
     
      var predicted_distance = 218+
