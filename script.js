@@ -18,35 +18,46 @@ function testing(){
     //document.getElementById("dpl2").style.backgroundColor = "purple";
     
      //get gender, height, age, laps, distance/lap
-     var gender = document.getElementById("g2");
+     //var gender = document.getElementById("g2");
         
      //console.log variables
-    console.log("gender "+gender);
-    console.log("gender.value "+gender.value);
-            
+    //console.log("gender "+gender);
+    //console.log("gender.value "+gender.value);
         
     var form = document.getElementById('form');
-
     var text = form[0];
     console.log(text);
-    var text = form[1];
-    console.log(text.value);
-    var text = form[2];
-    console.log(text.value);
-    var text = form[3];
-    console.log(text.value);
-    var text = form[4];
-    console.log(text.value);
-    var text = form[5];
-    console.log(text.value);
-}
-    /*
     
+    var gender = form[1];
+    console.log(gender.value);
+    
+    var height = form[2];
+    console.log(height.value);
+    
+    var age = form[3];
+    console.log(age.value);
+    
+    var laps = form[4];
+    console.log(laps.value);
+    
+    var distance_per_lap = form[5];
+    console.log(distance_per_lap.value);
+}
+        
+    //calculate predicted distance
      var predicted_distance = 218+
-                              (5.14*parseInt(height.value)
-                              -5.32*parseInt(age.value))
-                              -1.8*parseInt(height.value)
-                              +51.31*parseInt(gender.value);
+                              (5.14*(height.value))
+     //                         -5.32*parseInt(age.value))
+     //                         -1.8*parseInt(height.value)
+     //                         +51.31*parseInt(gender.value);
+
+    
+    console.log(predicted_distance);
+    
+    //output the calcualted predicted walk distance
+    document.getElementById("predicted_walk_distance2").innerHTML = "Predicted Walk Distance: " + predicted_distance +"m";
+    
+    /*
  
      //calculate distance walked
      var distance_walked = parseFloat(laps.value)*parseFloat(distance_per_lap.value);
