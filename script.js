@@ -28,7 +28,7 @@ function testing(){
     var form = document.getElementById('form');
 
     var text = form[0];
-    console.log(text.select);
+    console.log(text.selected);
 }
     /*
     
