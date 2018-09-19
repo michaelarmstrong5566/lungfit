@@ -21,7 +21,8 @@ function testing(){
      var gender = document.getElementById("g2");
         
      //console.log variables
-    console.log("gender: "+ gender);
+    console.log("gender "+gender);
+    console.log("gender.value "+gender.value);
             
         
     var form = document.getElementById('form');
