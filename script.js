@@ -22,6 +22,7 @@ function testing(){
         
      //console.log variables
     console.log("gender: "+ gender);
+    }
         
     /*
     
