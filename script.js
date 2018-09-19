@@ -1,9 +1,9 @@
 
-function allFunctions() {
+/*function allFunctions() {
     calculatePredictedWalkDistance();
     calculateDistanceWalked();
     calculatePercentPredicted();
-}
+}*/
 
 function testing(){
     //alert("testing testing 1 2 3");
@@ -31,6 +31,7 @@ function testing(){
     console.log("laps: "+parseInt(laps.value));
     console.log("distance/lap: "+parseInt(distance_per_lap.value));
     
+    /*
     
      var predicted_distance = 218+
                               (5.14*parseInt(height.value)
@@ -86,7 +87,7 @@ function calculatePercentPredicted(){
 
 }
 
-
+*/
 
 
 // CodePen Stopwatch by Billy Brown (https://codepen.io/_Billy_Brown/pen/dbJeh)
