@@ -52,7 +52,7 @@ function testing(){
     //output the calculated predicted walk distance, distance walked  and percent predicted
     document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance +" m";
     document.getElementById("distance_walked").innerHTML = "Distance Walked: " + distance_walked+" m";
-    document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ percent_predicted+" %";
+    document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ percent_predicted.toFixed(1) +" %";
     
 } 
 
