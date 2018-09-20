@@ -50,9 +50,9 @@ function testing(){
     var percent_predicted = distance_walked/predicted_distance*100;
     
     //output the calculated predicted walk distance, distance walked  and percent predicted
-    document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance +" m";
-    document.getElementById("distance_walked").innerHTML = "Distance Walked: " + distance_walked+" m";
-    document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ percent_predicted.toFixed(1) +" %";
+    document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance.toFixed(0) +" m";
+    document.getElementById("distance_walked").innerHTML = "Distance Walked: " + distance_walked.toFixed(0) +" m";
+    document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ percent_predicted.toFixed(0) +" %";
     
 } 
 
