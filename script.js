@@ -44,19 +44,16 @@ function testing(){
     console.log(distance_per_lap.value);
 
         
-    //calculate predicted distance
+    //calculate predicted distance, distance walked and percent predicted
     var predicted_distance = 218+(5.14*height.value - 5.32*age.value) - 1.8*height.value + 51.31*gender.value;
-    console.log(predicted_distance);
-
-     //calculate distance walked
-     var distance_walked = laps.value*distance_per_lap.value;
-
+    var distance_walked = laps.value*distance_per_lap.value;
+    var percent_predicted = distance_walked/predicted_distance*100;
     
-    //output the calcualted predicted walk distance
-    document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance +"m";
-  
-    //output the distance walked
-    document.getElementById("distance_walked").innerHTML = "Distance Walked: " + distance_walked +"m";
+    //output the calculated predicted walk distance, distance walked  and percent predicted
+    document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance +" m";
+    document.getElementById("distance_walked").innerHTML = "Distance Walked: " + distance_walked+" m";
+    document.getElementById("percent_predicted2").innerHTML = "Percent predicted: "+ percent_predicted+" %";
+    
 } 
 
 
