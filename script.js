@@ -45,13 +45,21 @@ function testing(){
 
         
     //calculate predicted distance
-     var predicted_distance = 218+(5.14*height.value - 5.32*age.value) - 1.8*height.value + 51.31*gender.value;
-    
+    var predicted_distance = 218+(5.14*height.value - 5.32*age.value) - 1.8*height.value + 51.31*gender.value;
     console.log(predicted_distance);
+
+     //calculate distance walked
+     var distance_walked = laps.value*distance_per_lap.value;
+
     
     //output the calcualted predicted walk distance
     document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance +"m";
-}    
+  
+    //output the distance walked
+    document.getElementById("distance_walked").innerHTML = "Distance Walked: " + distance_walked +"m";
+} 
+
+
     /*
  
      //calculate distance walked
