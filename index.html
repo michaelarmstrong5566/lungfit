@@ -18,15 +18,15 @@
                 <fieldset>
                     <legend>Input:</legend>
 
-                    <select type="number" id="g2" onchange="testing()">
+                    <select type="number" onchange="testing()">
                         <option value="1">Male</option>
                         <option value="0">Female</option>
                     </select><br><br>
-                    <input type="number" id="h2" name="height" placeholder="Height (cm)" onchange="testing()"><br><br>
-                    <input type="number" id="a2" name="age" placeholder="Age(years)" onchange="testing()"><br><br>
-                    <input type="number" id="l2" name="laps" placeholder="Laps(#)" onchange="testing()"><br><br>
+                    <input type="number" placeholder="Height (cm)" onchange="testing()"><br><br>
+                    <input type="number" placeholder="Age(years)" onchange="testing()"><br><br>
+                    <input type="number" placeholder="Laps(#)" onchange="testing()"><br><br>
 
-                    <select type="number" id="dpl2" name="distance_per_lap" onchange="testing()">
+                    <select type="number" onchange="testing()">
                         <option value="25">25m</option>
                         <option value="50" selected>50m</option>
                         <option value="75">75m</option>
@@ -40,8 +40,26 @@
             </div>
             <div class="column">
                 <fieldset>
-                    <legend>Stopwatch:</legend>
-                    <nav class="controls">
+                        <legend>Output:</legend>
+                    <p id="predicted_walk_distance"></p>
+                    <p id="distance_walked"></p>
+                    <p id="percent_predicted2"></p>
+                    
+                    
+                    
+                    
+                    
+                 
+
+                </fieldset>
+            </div>
+
+
+
+            <div class="column">
+                <fieldset>
+                   <legend>Stopwatch:</legend>
+                        <nav class="controls">
                         <button type="button" onClick="stopwatch.start()">Start</button>
                         <button type="button" onClick="stopwatch.lap()">Lap</button>
                         <button type="button" onClick="stopwatch.stop()">Stop</button>
@@ -51,18 +69,6 @@
                     <div class="stopwatch"></div>
                     <ol class="results"></ol>
 
-
-                </fieldset>
-            </div>
-
-
-
-            <div class="column">
-                <fieldset>
-                    <legend>Output:</legend>
-                    <p id="predicted_walk_distance"></p>
-                    <p id="distance_walked"></p>
-                    <p id="percent_predicted2"></p>
 
 
 
