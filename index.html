@@ -25,58 +25,28 @@
                     <input type="number" placeholder="Height (cm)" onchange="testing()"><br><br>
                     <input type="number" placeholder="Age(years)" onchange="testing()"><br><br>
                     <input type="number" placeholder="Laps(#)" onchange="testing()"><br><br>
-
                     <select type="number" onchange="testing()">
                         <option value="25">25m</option>
                         <option value="50" selected>50m</option>
                         <option value="75">75m</option>
                         <option value="100">100m</option>
-
+                    <input type="number" placeholder="FEV1(L)" onchange="testing()"><br><br>
                     </select>
 
 
 
                 </fieldset>
             </div>
+            
             <div class="column">
                 <fieldset>
-                        <legend>Output:</legend>
+                    <legend>Output:</legend>
                     <p id="predicted_walk_distance"></p>
                     <p id="distance_walked"></p>
                     <p id="percent_predicted"></p>
-                    
-                    
-                    
-                    
-                    
-                 
-
-                </fieldset>
+                 </fieldset>
             </div>
-
-
-
-            <div class="column">
-                <fieldset>
-                   <legend>Stopwatch:</legend>
-                        <nav class="controls">
-                        <button type="button" onClick="stopwatch.start()">Start</button>
-                        <button type="button" onClick="stopwatch.lap()">Lap</button>
-                        <button type="button" onClick="stopwatch.stop()">Stop</button>
-                        <button type="button" onClick="stopwatch.restart()">Restart</button>
-                        <button type="button" onClick="stopwatch.clear()">Clear Laps</button><br>
-                    </nav>
-                    <div class="stopwatch"></div>
-                    <ol class="results"></ol>
-
-
-
-
-
-
-
-                </fieldset>
-            </div>
+   
         </div>
 
 
