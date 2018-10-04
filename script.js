@@ -30,7 +30,7 @@ function testing(){
     
     var fev1 = form[6];
     console.log(fev1.value);
-    fev1 = fev1.value;
+    
         
     //calculate predicted distance, distance walked and percent predicted
     var predicted_distance = 218+(5.14*height.value - 5.32*age.value) - 1.8*height.value + 51.31*gender.value;
@@ -38,14 +38,15 @@ function testing(){
     var percent_predicted = distance_walked/predicted_distance*100;
     
     //calculate C
-    var C = calculateC(185, 4, gender.value);
+    var C = calculateC(height.value, fev1.value, gender.value);
  
+
      
     //output the calculated predicted walk distance, distance walked  and percent predicted
     document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance.toFixed(0) +" m";
     document.getElementById("distance_walked").innerHTML = "Distance Walked: " + distance_walked.toFixed(0) +" m";
     document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ percent_predicted.toFixed(0) +" %";
-    document.getElementById("lung_age").innerHTML = "Lung Age: "+ fev1 +" years";
+    document.getElementById("lung_age").innerHTML = "Lung Age: "+ fev1.value +" years";
     document.getElementById("C").innerHTML = "C: "+ C;
     
 } 
@@ -54,12 +55,10 @@ function testing(){
  
     function calculateC(H,F,G){
          if (G == 1){
-         return 1 
-          //-0.00014098*H^2 -0.5536+ F;
+         return -0.00014098*H**2 -0.5536 + parseFloat(F);
          }
          else {
-         return 0 
-          //-0.00011496*H^2 -0.4333 + F;
+         return -0.00011496*H**2 -0.4333 + parseFloat(F);
          }
      
       
