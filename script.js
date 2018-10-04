@@ -15,6 +15,7 @@ function testing(){
     
     var gender = form[1];
     console.log(gender.value);
+    gender = gender.value();
     
     var height = form[2];
     console.log(height.value);
@@ -38,7 +39,7 @@ function testing(){
     var percent_predicted = distance_walked/predicted_distance*100;
     
     //calculate C
-    var C = calculateC(185, 4, 1);
+    var C = calculateC(185, 4, gender);
  
      
     //output the calculated predicted walk distance, distance walked  and percent predicted
