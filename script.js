@@ -73,7 +73,7 @@ function testing(){
          }
          else {
           
-         return -4*parseFloat(C)*0.00361;
+         return -4*parseFloat(C)*0.00019;
           //0.00361**2
          } 
         }
