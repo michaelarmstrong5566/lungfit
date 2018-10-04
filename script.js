@@ -38,7 +38,7 @@ function testing(){
     var percent_predicted = distance_walked/predicted_distance*100;
     
     //calculate C
-    var C = calculateC(185, 4, gender);
+    var C = calculateC(185, 4, gender.value);
  
      
     //output the calculated predicted walk distance, distance walked  and percent predicted
