@@ -40,6 +40,9 @@ function testing(){
     //calculate C
     var C = calculateC(height.value, fev1.value, gender.value);
  
+    //calculate D
+    var D = calculateD(C, gender.value);
+ 
 
      
     //output the calculated predicted walk distance, distance walked  and percent predicted
@@ -48,6 +51,7 @@ function testing(){
     document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ percent_predicted.toFixed(0) +" %";
     document.getElementById("lung_age").innerHTML = "Lung Age: "+ fev1.value +" years";
     document.getElementById("C").innerHTML = "C: "+ C;
+    document.getElementById("D").innerHTML = "D: "+ D;
     
 } 
 
@@ -60,6 +64,17 @@ function testing(){
          else {
          return -0.00011496*H**2 -0.4333 + parseFloat(F);
          }
+     
+     function calculateD(C,G){
+         if (G == 1){
+         return 1;
+         }
+         else {
+         return 0;
+         }
+      
+     
+     }
      
       
     }
