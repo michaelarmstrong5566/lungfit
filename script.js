@@ -41,7 +41,7 @@ function testing(){
     var C = calculateC(height.value, fev1.value, gender.value);
  
     //calculate D
-    var D = calculateD(C.value, gender.value);
+    var D = calculateD(0, gender.value);
  
 
      
