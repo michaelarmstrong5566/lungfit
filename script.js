@@ -54,10 +54,12 @@ function testing(){
  
     function calculateC(H,F,G){
          if (G == 1){
-         return -0.00014098*H^2 -0.5536+ F;
+         return 1 
+          //-0.00014098*H^2 -0.5536+ F;
          }
          else {
-         return -0.00011496*H^2 -0.4333 + F;
+         return 0 
+          //-0.00011496*H^2 -0.4333 + F;
          }
      
       
