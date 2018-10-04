@@ -41,8 +41,7 @@ function testing(){
     var C = calculateC(height.value, fev1.value, gender.value);
  
     //calculate D
-    var D = calculateD(0, gender.value);
- 
+    var D = calculateD(C, gender.value);
 
      
     //output the calculated predicted walk distance, distance walked  and percent predicted
@@ -63,21 +62,17 @@ function testing(){
          }
          else {
          return -0.00011496*H**2 -0.4333 + parseFloat(F);
-         }
-     
-     function calculateD(C,G){
+         } 
+        }
+
+    function calculateD(C,G){
          if (G == 1){
          return 1;
          }
          else {
          return 0;
-         }
-      
-     
-     }
-     
-      
-    }
+         } 
+        }
 
 
 
