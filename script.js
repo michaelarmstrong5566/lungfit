@@ -53,7 +53,7 @@ function testing(){
   
  
     function calculateC(H,F,G){
-         if G === 1{
+         if (G == 1){
          return -0.00014098*H^2 -0.5536+ F;
          }
          else {
