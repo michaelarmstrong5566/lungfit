@@ -15,8 +15,7 @@ function testing(){
     
     var gender = form[1];
     console.log(gender.value);
-    gender = gender.value;
-    
+ 
     var height = form[2];
     console.log(height.value);
     
