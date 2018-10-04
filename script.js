@@ -68,11 +68,13 @@ function testing(){
     function calculateD(C,G){
          if (G == 1){
          
-         return 0.013003**2 -4*0.00017*-parseFloat(C);
+         return -parseFloat(C);
+          //0.013003**2 -4*0.00017*
          }
          else {
           
-         return 0.00361**2 -4*-parseFloat(C);
+         return -parseFloat(C);
+          //0.00361**2 -4*0.00361*
          } 
         }
 
