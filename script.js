@@ -81,7 +81,7 @@ function testing(){
          } 
         }
 
- function calculateLungAgeD(D,G){
+ function calculateLungAge(D,G){
          if (G == 1){
          
          return parseFloat(D);
