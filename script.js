@@ -84,12 +84,12 @@ function testing(){
  function calculateLungAge(D,G){
          if (G == 1){
          
-         return parseFloat(D);
+         return -(0.01303 + parseFloat(D));
           
          }
          else {
           
-         return parseFloat(D);
+         return -(0.00361 + parseFloat(D));
          
          } 
         }
