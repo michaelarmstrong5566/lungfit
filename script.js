@@ -101,10 +101,10 @@ function testing(){
 
  function calculateFEV1(A,H,G){
          if (G == 1){
-          a = 0.5536;
-          b = -0.01303
-          c = -0.000172
-          d = 0.00014098
+          var a = 0.5536;
+          var b = -0.01303
+          var c = -0.000172
+          var d = 0.00014098
          
          return a + b*parseInt(A) + c*parseInt(A)*parseInt(A) + d*parseInt(H)*parseInt(H); 
           
