@@ -47,18 +47,19 @@ function testing(){
     var LungAge = calculateLungAge(D, gender.value);
 
      
-    //output the calculated predicted walk distance, distance walked  and percent predicted
-    document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance.toFixed(0) +" m";
+    //output the calculated predicted walk distance, distance walked, percent predicted, lung age
+    //document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance.toFixed(0) +" m";
     document.getElementById("distance_walked").innerHTML = "Distance Walked: " + distance_walked.toFixed(0) +" m";
     document.getElementById("percent_predicted").innerHTML = "Percent predicted: "+ percent_predicted.toFixed(0) +" %";
     document.getElementById("lung_age").innerHTML = "Lung Age: "+ LungAge +" years";
-    document.getElementById("C").innerHTML = "C: "+ C;
-    document.getElementById("D").innerHTML = "D: "+ D;
+    //document.getElementById("C").innerHTML = "C: "+ C;
+    //document.getElementById("D").innerHTML = "D: "+ D;
+     document.getElementById("bode_index").innerHTML = "BODE Index: "+ fev1.value";
     
 } 
 
   
- 
+    //calculate C to calculate D 
     function calculateC(H,F,G){
          if (G == 1){
          return -0.00014098*H**2 -0.5536 + parseFloat(F);
@@ -67,7 +68,7 @@ function testing(){
          return -0.00011496*H**2 -0.4333 + parseFloat(F);
          } 
         }
-
+    //calculate D to calculate Lung Age
     function calculateD(C,G){
          if (G == 1){
          
@@ -80,7 +81,7 @@ function testing(){
          
          } 
         }
-
+//calcualte Lung Age
  function calculateLungAge(D,G){
          if (G == 1){
          
