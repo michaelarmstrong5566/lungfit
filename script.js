@@ -56,7 +56,7 @@ function testing(){
     document.getElementById("lung_age").innerHTML = "Lung Age: "+ LungAge +" years";
     //document.getElementById("C").innerHTML = "C: "+ C;
     //document.getElementById("D").innerHTML = "D: "+ D;
-     document.getElementById("bode_index").innerHTML = "BODE Index: "+ fev1_pred.value;
+     document.getElementById("bode_index").innerHTML = "BODE Index: "+ fev1_pred;
     
 } 
 
