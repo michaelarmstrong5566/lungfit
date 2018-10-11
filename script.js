@@ -45,8 +45,10 @@ function testing(){
  
     //calcualte Lung Age
     var LungAge = calculateLungAge(D, gender.value);
+ 
+    //calcualte FEV1 predicted from age, height and gender
+    var fev1_pred = calculateFEV1(age.value,height.value,gender.value);
 
-     
     //output the calculated predicted walk distance, distance walked, percent predicted, lung age
     //document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance.toFixed(0) +" m";
     document.getElementById("distance_walked").innerHTML = "Distance Walked: " + distance_walked.toFixed(0) +" m";
@@ -54,7 +56,7 @@ function testing(){
     document.getElementById("lung_age").innerHTML = "Lung Age: "+ LungAge +" years";
     //document.getElementById("C").innerHTML = "C: "+ C;
     //document.getElementById("D").innerHTML = "D: "+ D;
-     document.getElementById("bode_index").innerHTML = "BODE Index: "+ fev1.value;
+     document.getElementById("bode_index").innerHTML = "BODE Index: "+ fev1_pred.value;
     
 } 
 
@@ -91,6 +93,25 @@ function testing(){
          else {
           
          return parseInt((-0.00361 + parseFloat(D))/0.00038);
+         
+         } 
+        }
+//calcualte FEV1(L) Predicted
+//A = age(years), H = height(cm), G = gender(1=male, 0=female)
+
+ function calculateFEV1(A,H,G){
+         if (G == 1){
+          a = 0.5536;
+          b = -0.01303
+          c = -0.000172
+          d = 0.00014098
+         
+         return a + b*parseInt(A) + c*parseInt(A)*parseInt(A) + d*parseInt(H)*parseInt(H); 
+          
+         }
+         else {
+          
+         return;
          
          } 
         }
