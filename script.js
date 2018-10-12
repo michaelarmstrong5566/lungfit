@@ -114,9 +114,8 @@ function testing(){
           var b = -0.01303
           var c = -0.000172
           var d = 0.00014098
-          
-          
-         return a + b;
+                    
+         return a + b*parseInt(A) + c*parseInt(A)*parseInt(A) + d*parseInt(H)*parseInt(H);
           
          } 
         }
