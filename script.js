@@ -111,8 +111,8 @@ function testing(){
          }
          else {
           
-         return;
-         
+         return a + b;
+          
          } 
         }
 
