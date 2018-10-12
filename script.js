@@ -110,6 +110,11 @@ function testing(){
           
          }
          else {
+          var a = 0.5536;
+          var b = -0.01303
+          var c = -0.000172
+          var d = 0.00014098
+          
           
          return a + b;
           
