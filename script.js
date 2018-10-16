@@ -120,7 +120,7 @@ function testing(){
          } 
         }
 function calculateFEV1PercentPred(FEV1measured, FEV1predicted){
-       return parseFloat(FEV1measured)/parseFloat(FEV1predicted);
+       return FEV1measured;
 }
 
 
