@@ -50,7 +50,10 @@ function testing(){
     var fev1_pred = calculateFEV1(age.value,height.value,gender.value);
  
    //calculate FEV1 percent predicted from FEV1 and FEV1 predicted
-   var fev1_percent_pred = calculateFEV1PercentPred(fev1.value, fev1_pred.value)
+   var fev1_percent_pred = calculateFEV1PercentPred(fev1.value, fev1_pred);
+
+   //calculate BODE Score
+   var bode = calculateBodeScore(fev1_percent_pred);
  
     //output the calculated predicted walk distance, distance walked, percent predicted, lung age
     //document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance.toFixed(0) +" m";
@@ -59,7 +62,7 @@ function testing(){
     document.getElementById("lung_age").innerHTML = "Lung Age: "+ LungAge +" years";
     //document.getElementById("C").innerHTML = "C: "+ C;
     //document.getElementById("D").innerHTML = "D: "+ D;
-     document.getElementById("bode_index").innerHTML = "BODE Index: "+ fev1_percent_pred;
+     document.getElementById("bode_index").innerHTML = "BODE Index: "+ bode;
     
 } 
 
@@ -126,6 +129,19 @@ function calculateFEV1PercentPred(FEV1measured, FEV1predicted){
          var a = FEV1measured;
          var b = FEV1predicted;
          return a/b;
+ }
+
+ function calculateBodeScore(fev1_percent_pred){
+    if (fev1_percent_pred >= 0.65){
+        return 0;
+    } else if (fev1_percent_pred >= 0.5 && fev1_percent_pred <=0.64){
+        return 1;
+    } else if (fev1_percent_pred >= 0.36 && fev1_percent_pred <= 0.49){
+        return 2;
+    } else if (fev1_percent_pred <= 0.35){
+        return 3;
+    }
+
  }
 
 
