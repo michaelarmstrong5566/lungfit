@@ -30,6 +30,12 @@ function testing(){
     
     var fev1 = form[6];
     console.log(fev1.value);
+
+    var mrc = form[7];
+    console.log(mrc.value);
+
+    var weight = form[8];
+    console.log(weight.value);
     
         
     //calculate predicted distance, distance walked and percent predicted
@@ -52,8 +58,12 @@ function testing(){
    //calculate FEV1 percent predicted from FEV1 and FEV1 predicted
    var fev1_percent_pred = calculateFEV1PercentPred(fev1.value, fev1_pred);
 
+   //calculate BMI
+   var bmi = calculateBMI(height.value, weight.value);
+
    //calculate BODE Score
-   var bode = calculateBodeScore1(fev1_percent_pred) + calculateBodeScore2(distance_walked);
+   var bode = calculateBodeScore1(fev1_percent_pred) + calculateBodeScore2(distance_walked) + parseInt(mrc.value) + calculateBodeScore4(bmi); 
+   
  
     //output the calculated predicted walk distance, distance walked, percent predicted, lung age
     //document.getElementById("predicted_walk_distance").innerHTML = "Predicted Walk Distance: " + predicted_distance.toFixed(0) +" m";
@@ -63,6 +73,7 @@ function testing(){
     //document.getElementById("C").innerHTML = "C: "+ C;
     //document.getElementById("D").innerHTML = "D: "+ D;
      document.getElementById("bode_index").innerHTML = "BODE Index: "+ bode;
+     //document.getElementById("bmi").innerHTML = "BMI: " + bmi;
     
 } 
 
@@ -125,9 +136,9 @@ function testing(){
           
          } 
         }
-function calculateFEV1PercentPred(FEV1measured, FEV1predicted){
-         var a = FEV1measured;
-         var b = FEV1predicted;
+function calculateFEV1PercentPred(A, B){
+         var a = A;
+         var b = B;
          return a/b;
  }
 
@@ -154,6 +165,20 @@ function calculateFEV1PercentPred(FEV1measured, FEV1predicted){
         return 3;
     }
  }
+
+function calculateBMI(height, weight){
+    var h = height/100;
+    var w = weight;
+    return w/(parseFloat(h)*parseFloat(h));
+}
+
+function calculateBodeScore4(bmi){;
+    if (bmi >= 21) {
+        return 0;
+    } else {
+        return 1;
+    }
+}
 
 
 
